@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\CQRS-ES",
+    "\\CQRS-ES\\CQRS.Core",
+    "\\SM-Post",
+    "\\SM-Post\\Post.Cmd",
+    "\\SM-Post\\Post.Cmd\\Post.Cmd.Api",
+    "\\SM-Post\\Post.Common",
+    "\\SM-Post\\Post.Query"
+  ],
+  "SelectedNode": "\\SM-Post\\Post.Query",
+  "PreviewInSolutionExplorer": false
+}
