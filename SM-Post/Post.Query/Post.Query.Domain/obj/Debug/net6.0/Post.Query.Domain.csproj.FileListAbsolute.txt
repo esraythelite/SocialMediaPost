@@ -13,3 +13,7 @@ C:\Users\Esra\Desktop\UdemyEventSorcingProject\SM-Post\Post.Query\Post.Query.Dom
 C:\Users\Esra\Desktop\UdemyEventSorcingProject\SM-Post\Post.Query\Post.Query.Domain\obj\Debug\net6.0\refint\Post.Query.Domain.dll
 C:\Users\Esra\Desktop\UdemyEventSorcingProject\SM-Post\Post.Query\Post.Query.Domain\obj\Debug\net6.0\Post.Query.Domain.pdb
 C:\Users\Esra\Desktop\UdemyEventSorcingProject\SM-Post\Post.Query\Post.Query.Domain\obj\Debug\net6.0\ref\Post.Query.Domain.dll
+C:\Users\Esra\Desktop\UdemyEventSorcingProject\SM-Post\Post.Query\Post.Query.Domain\bin\Debug\net6.0\Post.Cmd.Domain.dll
+C:\Users\Esra\Desktop\UdemyEventSorcingProject\SM-Post\Post.Query\Post.Query.Domain\bin\Debug\net6.0\Post.Common.dll
+C:\Users\Esra\Desktop\UdemyEventSorcingProject\SM-Post\Post.Query\Post.Query.Domain\bin\Debug\net6.0\Post.Cmd.Domain.pdb
+C:\Users\Esra\Desktop\UdemyEventSorcingProject\SM-Post\Post.Query\Post.Query.Domain\bin\Debug\net6.0\Post.Common.pdb

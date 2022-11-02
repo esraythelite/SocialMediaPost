@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "jf1nI+UTinsv6lsJCTJwxhIBWthuU7DZ4wB8OfeL0q/YnZyIDZOxPdIWhv9yQOU3eoFcxjhJ8wzzrUYTL1y3Pg==",
+  "dgSpecHash": "8Q2R0ad3L7cms26JYPk5CmZGzliIf49WN5oCDt0rLqUAycr7QOL+3vRnYEffNqUJeTfPdz/8lDe+uYkYs2SYyw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Esra\\Desktop\\UdemyEventSorcingProject\\SM-Post\\Post.Cmd\\Post.Cmd.Infrastructure\\Post.Cmd.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Esra\\.nuget\\packages\\confluent.kafka\\1.9.3\\confluent.kafka.1.9.3.nupkg.sha512",
     "C:\\Users\\Esra\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Users\\Esra\\.nuget\\packages\\librdkafka.redist\\1.9.2\\librdkafka.redist.1.9.2.nupkg.sha512",
+    "C:\\Users\\Esra\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\Esra\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\Esra\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\2.0.0\\microsoft.extensions.logging.abstractions.2.0.0.nupkg.sha512",
     "C:\\Users\\Esra\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",

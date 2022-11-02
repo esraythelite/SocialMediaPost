@@ -104,3 +104,9 @@ C:\Users\Esra\Desktop\UdemyEventSorcingProject\SM-Post\Post.Query\Post.Query.Api
 C:\Users\Esra\Desktop\UdemyEventSorcingProject\SM-Post\Post.Query\Post.Query.Api\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\Esra\Desktop\UdemyEventSorcingProject\SM-Post\Post.Query\Post.Query.Api\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Esra\Desktop\UdemyEventSorcingProject\SM-Post\Post.Query\Post.Query.Api\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\Esra\Desktop\UdemyEventSorcingProject\SM-Post\Post.Query\Post.Query.Api\bin\Debug\net6.0\Castle.Core.dll
+C:\Users\Esra\Desktop\UdemyEventSorcingProject\SM-Post\Post.Query\Post.Query.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\Esra\Desktop\UdemyEventSorcingProject\SM-Post\Post.Query\Post.Query.Api\bin\Debug\net6.0\Post.Cmd.Domain.dll
+C:\Users\Esra\Desktop\UdemyEventSorcingProject\SM-Post\Post.Query\Post.Query.Api\bin\Debug\net6.0\Post.Common.dll
+C:\Users\Esra\Desktop\UdemyEventSorcingProject\SM-Post\Post.Query\Post.Query.Api\bin\Debug\net6.0\Post.Cmd.Domain.pdb
+C:\Users\Esra\Desktop\UdemyEventSorcingProject\SM-Post\Post.Query\Post.Query.Api\bin\Debug\net6.0\Post.Common.pdb
