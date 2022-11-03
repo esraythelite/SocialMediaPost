@@ -17,13 +17,13 @@ namespace Post.Cmd.Infrastructure.Stores
     {
         private readonly IEventStoreRepository eventStoreRepository;
         private readonly IEventProducer eventProducer;
+        private readonly IConfiguration config;
 
-        public IConfiguration Config { get; }
-
-        public EventStore(IEventStoreRepository eventStoreRepository, IEventProducer eventProducer)
+        public EventStore( IEventStoreRepository eventStoreRepository, IEventProducer eventProducer, IConfiguration config )
         {
             this.eventStoreRepository = eventStoreRepository;
             this.eventProducer = eventProducer;
+            this.config = config;
         }
 
         public async Task<List<BaseEvent>> GetEventsAsync(Guid aggregateId)
@@ -66,7 +66,7 @@ namespace Post.Cmd.Infrastructure.Stores
 
                 await eventStoreRepository.SaveAsync(eventModel);
 
-                var topic = Config.GetSection("KafkaConfiguration:KAFKA_TOPIC").Value;
+                var topic = config.GetSection("KafkaConfiguration:KAFKA_TOPIC").Value;
                 await eventProducer.ProduceAsync(topic, evnt);
             }
         }
