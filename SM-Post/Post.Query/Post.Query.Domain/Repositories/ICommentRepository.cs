@@ -1,4 +1,4 @@
-﻿using Post.Cmd.Domain.Entities;
+﻿using Post.Query.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;

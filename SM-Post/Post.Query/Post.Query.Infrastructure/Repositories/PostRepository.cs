@@ -1,14 +1,14 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Post.Cmd.Domain.Entities;
+using Post.Query.Domain.Entities;
 using Post.Query.Domain.Repositories;
-using Post.Query_Infrastructure.DataAccess;
+using Post.Query.Infrastructure.DataAccess;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Post.Query_Infrastructure.Repositories
+namespace Post.Query.Infrastructure.Repositories
 {
     public class PostRepository : IPostRepository
     {
@@ -40,7 +40,7 @@ namespace Post.Query_Infrastructure.Repositories
         public async Task<PostEntity> GetByIdAsync( Guid postId )
         {
             using DatabaseContext context = databaseContextFactory.CreateDbContext();
-            return await context.Posts.Include(p => p.Comments).FirstOrDefaultAsync(x => x.PosId == postId);
+            return await context.Posts.Include(p => p.Comments).FirstOrDefaultAsync(x => x.PostId == postId);
         }
 
         public async Task<List<PostEntity>> ListAllAsync()
@@ -74,5 +74,8 @@ namespace Post.Query_Infrastructure.Repositories
 
             await context.SaveChangesAsync();
         }
+
+
+
     }
 }

@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Post.Query_Infrastructure.Consumers
+namespace Post.Query.Infrastructure.Consumers
 {
     public class ConsumerHostedService : IHostedService
     {
@@ -25,6 +25,7 @@ namespace Post.Query_Infrastructure.Consumers
             this.serviceProvider = serviceProvider;
             this.config = config;
         }
+
         public Task StartAsync( CancellationToken cancellationToken )
         {
             logger.LogInformation("Event consumer service running");
@@ -32,7 +33,7 @@ namespace Post.Query_Infrastructure.Consumers
             using(IServiceScope scope = serviceProvider.CreateScope())
             {
                 var eventConsmer = scope.ServiceProvider.GetRequiredService<IEventConsumer>();
-                var topic = config.GetSection("KafkaConfiguration:KAFKA_TOPIC").Value; ;
+                var topic = config.GetSection("KafkaConfiguration:KAFKA_TOPIC").Value; 
 
                 Task.Run(() => eventConsmer.Consume(topic), cancellationToken);
             }
@@ -42,7 +43,9 @@ namespace Post.Query_Infrastructure.Consumers
 
         public Task StopAsync( CancellationToken cancellationToken )
         {
-            throw new NotImplementedException();
+            logger.LogInformation("Event Consumer Service Stopped");
+
+            return Task.CompletedTask;
         }
     }
 }

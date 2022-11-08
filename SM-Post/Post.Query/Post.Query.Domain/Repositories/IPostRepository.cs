@@ -1,9 +1,10 @@
-﻿using Post.Cmd.Domain.Entities;
+﻿using Post.Query.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PostEntity = Post.Query.Domain.Entities.PostEntity;
 
 namespace Post.Query.Domain.Repositories
 {

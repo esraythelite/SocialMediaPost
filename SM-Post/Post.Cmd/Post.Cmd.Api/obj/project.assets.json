@@ -1276,6 +1276,7 @@
       "CQRS.Core >= 1.0.0",
       "Post.Cmd.Domain >= 1.0.0",
       "Post.Cmd.Infrastructure >= 1.0.0",
+      "Post.Common >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -1314,6 +1315,9 @@
             },
             "C:\\Users\\Esra\\Desktop\\UdemyEventSorcingProject\\SM-Post\\Post.Cmd\\Post.Cmd.Infrastructure\\Post.Cmd.Infrastructure.csproj": {
               "projectPath": "C:\\Users\\Esra\\Desktop\\UdemyEventSorcingProject\\SM-Post\\Post.Cmd\\Post.Cmd.Infrastructure\\Post.Cmd.Infrastructure.csproj"
+            },
+            "C:\\Users\\Esra\\Desktop\\UdemyEventSorcingProject\\SM-Post\\Post.Common\\Post.Common.csproj": {
+              "projectPath": "C:\\Users\\Esra\\Desktop\\UdemyEventSorcingProject\\SM-Post\\Post.Common\\Post.Common.csproj"
             }
           }
         }

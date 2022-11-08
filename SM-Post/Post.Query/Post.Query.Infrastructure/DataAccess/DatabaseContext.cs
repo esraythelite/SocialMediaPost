@@ -1,12 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Post.Cmd.Domain.Entities;
+using Post.Query.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Post.Query_Infrastructure.DataAccess
+namespace Post.Query.Infrastructure.DataAccess
 {
     public class DatabaseContext:DbContext
     {

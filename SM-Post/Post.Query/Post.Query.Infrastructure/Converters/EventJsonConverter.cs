@@ -8,7 +8,7 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
-namespace Post.Query_Infrastructure.Converters
+namespace Post.Query.Infrastructure.Converters
 {
     public class EventJsonConverter : JsonConverter<BaseEvent>
     {

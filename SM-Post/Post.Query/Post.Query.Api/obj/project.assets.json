@@ -2607,20 +2607,6 @@
           "bin/placeholder/CQRS.Core.dll": {}
         }
       },
-      "Post.Cmd.Domain/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "CQRS.Core": "1.0.0",
-          "Post.Common": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Post.Cmd.Domain.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Post.Cmd.Domain.dll": {}
-        }
-      },
       "Post.Common/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -2637,10 +2623,6 @@
       "Post.Query.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "CQRS.Core": "1.0.0",
-          "Post.Cmd.Domain": "1.0.0"
-        },
         "compile": {
           "bin/placeholder/Post.Query.Domain.dll": {}
         },
@@ -2657,6 +2639,7 @@
           "Microsoft.EntityFrameworkCore.Proxies": "6.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.10",
           "Microsoft.Extensions.Hosting": "6.0.1",
+          "Post.Common": "1.0.0",
           "Post.Query.Domain": "1.0.0"
         },
         "compile": {
@@ -8362,11 +8345,6 @@
       "type": "project",
       "path": "../../../CQRS-ES/CQRS.Core/CQRS.Core.csproj",
       "msbuildProject": "../../../CQRS-ES/CQRS.Core/CQRS.Core.csproj"
-    },
-    "Post.Cmd.Domain/1.0.0": {
-      "type": "project",
-      "path": "../../Post.Cmd/Post.Cmd.Domain/Post.Cmd.Domain.csproj",
-      "msbuildProject": "../../Post.Cmd/Post.Cmd.Domain/Post.Cmd.Domain.csproj"
     },
     "Post.Common/1.0.0": {
       "type": "project",

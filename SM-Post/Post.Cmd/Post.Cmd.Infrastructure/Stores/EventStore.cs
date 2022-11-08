@@ -30,7 +30,7 @@ namespace Post.Cmd.Infrastructure.Stores
         {
             var eventStream = await eventStoreRepository.FindByAggregateId(aggregateId);
 
-            if (eventStream == null || eventStream.Any())
+            if (eventStream == null || !eventStream.Any())
             {
                 throw new AggregateNotFoundException("Incorrect post ID provided!");
             }

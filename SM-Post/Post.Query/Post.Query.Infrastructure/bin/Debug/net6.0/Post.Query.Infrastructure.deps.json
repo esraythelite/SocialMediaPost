@@ -10,9 +10,12 @@
         "dependencies": {
           "CQRS.Core": "1.0.0",
           "Confluent.Kafka": "1.9.3",
+          "Microsoft.EntityFrameworkCore.Design": "6.0.10",
           "Microsoft.EntityFrameworkCore.Proxies": "6.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.10",
+          "Microsoft.EntityFrameworkCore.Tools": "6.0.10",
           "Microsoft.Extensions.Hosting": "6.0.1",
+          "Post.Common": "1.0.0",
           "Post.Query.Domain": "1.0.0"
         },
         "runtime": {
@@ -59,6 +62,14 @@
           "lib/net5.0/DnsClient.dll": {
             "assemblyVersion": "1.6.1.0",
             "fileVersion": "1.6.1.0"
+          }
+        }
+      },
+      "Humanizer.Core/2.8.26": {
+        "runtime": {
+          "lib/netstandard2.0/Humanizer.dll": {
+            "assemblyVersion": "2.8.0.0",
+            "fileVersion": "2.8.26.1919"
           }
         }
       },
@@ -276,6 +287,18 @@
         }
       },
       "Microsoft.EntityFrameworkCore.Analyzers/6.0.10": {},
+      "Microsoft.EntityFrameworkCore.Design/6.0.10": {
+        "dependencies": {
+          "Humanizer.Core": "2.8.26",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.10"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.Design.dll": {
+            "assemblyVersion": "6.0.10.0",
+            "fileVersion": "6.0.1022.47607"
+          }
+        }
+      },
       "Microsoft.EntityFrameworkCore.Proxies/6.0.10": {
         "dependencies": {
           "Castle.Core": "4.4.1",
@@ -310,6 +333,11 @@
             "assemblyVersion": "6.0.10.0",
             "fileVersion": "6.0.1022.47607"
           }
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Tools/6.0.10": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Design": "6.0.10"
         }
       },
       "Microsoft.Extensions.Caching.Abstractions/6.0.0": {
@@ -1770,15 +1798,6 @@
           "CQRS.Core.dll": {}
         }
       },
-      "Post.Cmd.Domain/1.0.0": {
-        "dependencies": {
-          "CQRS.Core": "1.0.0",
-          "Post.Common": "1.0.0"
-        },
-        "runtime": {
-          "Post.Cmd.Domain.dll": {}
-        }
-      },
       "Post.Common/1.0.0": {
         "dependencies": {
           "CQRS.Core": "1.0.0"
@@ -1788,10 +1807,6 @@
         }
       },
       "Post.Query.Domain/1.0.0": {
-        "dependencies": {
-          "CQRS.Core": "1.0.0",
-          "Post.Cmd.Domain": "1.0.0"
-        },
         "runtime": {
           "Post.Query.Domain.dll": {}
         }
@@ -1824,6 +1839,13 @@
       "sha512": "sha512-4H/f2uYJOZ+YObZjpY9ABrKZI+JNw3uizp6oMzTXwDw6F+2qIPhpRl/1t68O/6e98+vqNiYGu+lswmwdYUy3gg==",
       "path": "dnsclient/1.6.1",
       "hashPath": "dnsclient.1.6.1.nupkg.sha512"
+    },
+    "Humanizer.Core/2.8.26": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OiKusGL20vby4uDEswj2IgkdchC1yQ6rwbIkZDVBPIR6al2b7n3pC91elBul9q33KaBgRKhbZH3+2Ur4fnWx2A==",
+      "path": "humanizer.core/2.8.26",
+      "hashPath": "humanizer.core.2.8.26.nupkg.sha512"
     },
     "librdkafka.redist/1.9.2": {
       "type": "package",
@@ -1874,6 +1896,13 @@
       "path": "microsoft.entityframeworkcore.analyzers/6.0.10",
       "hashPath": "microsoft.entityframeworkcore.analyzers.6.0.10.nupkg.sha512"
     },
+    "Microsoft.EntityFrameworkCore.Design/6.0.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SVqDfUftgBoKCMPfTaWXiKBZPHMjbiBJLE5WE7MeD28nTk7CkmUNX8eXyNIeWxpDuk4r0zZ6XG9zyG7Ef3KS4A==",
+      "path": "microsoft.entityframeworkcore.design/6.0.10",
+      "hashPath": "microsoft.entityframeworkcore.design.6.0.10.nupkg.sha512"
+    },
     "Microsoft.EntityFrameworkCore.Proxies/6.0.10": {
       "type": "package",
       "serviceable": true,
@@ -1894,6 +1923,13 @@
       "sha512": "sha512-A5xZ2yO3zdYdZKlX90AjMruftIT73ApG2yW11T7sougUi1HyzpTh9/RF9LaLeMxZVzIAjuKvb7WkVzxduc2/Kg==",
       "path": "microsoft.entityframeworkcore.sqlserver/6.0.10",
       "hashPath": "microsoft.entityframeworkcore.sqlserver.6.0.10.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.Tools/6.0.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LWQvCb3lmTxkcnzO8H0ib0Ot/Pow9Kubt2iqvhhAHEbhs7SS1ygB938EpmuD9o1yyyliAg6FHln5o6jVfEkdyQ==",
+      "path": "microsoft.entityframeworkcore.tools/6.0.10",
+      "hashPath": "microsoft.entityframeworkcore.tools.6.0.10.nupkg.sha512"
     },
     "Microsoft.Extensions.Caching.Abstractions/6.0.0": {
       "type": "package",
@@ -2869,11 +2905,6 @@
       "hashPath": "zstdsharp.port.0.6.2.nupkg.sha512"
     },
     "CQRS.Core/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Post.Cmd.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

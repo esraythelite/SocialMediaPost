@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Post.Query_Infrastructure.Handlers
+namespace Post.Query.Infrastructure.Handlers
 {
     public interface IEventHandler
     {

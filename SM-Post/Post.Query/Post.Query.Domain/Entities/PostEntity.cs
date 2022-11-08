@@ -6,13 +6,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Post.Cmd.Domain.Entities
+namespace Post.Query.Domain.Entities
 {
     [Table("Post")]
     public class PostEntity
     {
         [Key]
-        public Guid PosId { get; set; }
+        public Guid PostId { get; set; }
         public string Author { get; set; }
         public DateTime DatePosted { get; set; }
         public string Message { get; set; }

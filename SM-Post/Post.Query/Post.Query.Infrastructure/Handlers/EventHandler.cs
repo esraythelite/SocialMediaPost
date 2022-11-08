@@ -1,4 +1,4 @@
-﻿using Post.Cmd.Domain.Entities;
+﻿using Post.Query.Domain.Entities;
 using Post.Common.Events;
 using Post.Query.Domain.Repositories;
 using System;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Post.Query_Infrastructure.Handlers
+namespace Post.Query.Infrastructure.Handlers
 {
     public class EventHandler : IEventHandler
     {
@@ -24,7 +24,7 @@ namespace Post.Query_Infrastructure.Handlers
         {
             var post = new PostEntity
             {
-                PosId = evnt.Id,
+                PostId = evnt.Id,
                 Author = evnt.Author,
                 DatePosted = evnt.DatePosted,
                 Message = evnt.Message

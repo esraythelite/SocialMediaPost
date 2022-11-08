@@ -1659,15 +1659,6 @@
           "CQRS.Core.dll": {}
         }
       },
-      "Post.Cmd.Domain/1.0.0": {
-        "dependencies": {
-          "CQRS.Core": "1.0.0",
-          "Post.Common": "1.0.0"
-        },
-        "runtime": {
-          "Post.Cmd.Domain.dll": {}
-        }
-      },
       "Post.Common/1.0.0": {
         "dependencies": {
           "CQRS.Core": "1.0.0"
@@ -1677,10 +1668,6 @@
         }
       },
       "Post.Query.Domain/1.0.0": {
-        "dependencies": {
-          "CQRS.Core": "1.0.0",
-          "Post.Cmd.Domain": "1.0.0"
-        },
         "runtime": {
           "Post.Query.Domain.dll": {}
         }
@@ -1692,6 +1679,7 @@
           "Microsoft.EntityFrameworkCore.Proxies": "6.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.10",
           "Microsoft.Extensions.Hosting": "6.0.1",
+          "Post.Common": "1.0.0",
           "Post.Query.Domain": "1.0.0"
         },
         "runtime": {
@@ -2813,11 +2801,6 @@
       "hashPath": "zstdsharp.port.0.6.2.nupkg.sha512"
     },
     "CQRS.Core/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Post.Cmd.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

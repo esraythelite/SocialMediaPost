@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Post.Query_Infrastructure.DataAccess
+namespace Post.Query.Infrastructure.DataAccess
 {
     public class DatabaseContextFactory
     {

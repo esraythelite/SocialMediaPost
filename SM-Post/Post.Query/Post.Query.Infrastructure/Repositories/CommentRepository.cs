@@ -1,14 +1,14 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Post.Cmd.Domain.Entities;
+using Post.Query.Domain.Entities;
 using Post.Query.Domain.Repositories;
-using Post.Query_Infrastructure.DataAccess;
+using Post.Query.Infrastructure.DataAccess;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Post.Query_Infrastructure.Repositories
+namespace Post.Query.Infrastructure.Repositories
 {
     public class CommentRepository : ICommentRepository
     {

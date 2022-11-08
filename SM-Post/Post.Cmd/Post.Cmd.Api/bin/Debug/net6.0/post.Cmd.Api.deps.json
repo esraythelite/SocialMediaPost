@@ -11,6 +11,7 @@
           "CQRS.Core": "1.0.0",
           "Post.Cmd.Domain": "1.0.0",
           "Post.Cmd.Infrastructure": "1.0.0",
+          "Post.Common": "1.0.0",
           "Swashbuckle.AspNetCore": "6.2.3"
         },
         "runtime": {

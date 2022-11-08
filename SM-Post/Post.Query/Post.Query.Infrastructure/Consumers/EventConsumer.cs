@@ -2,16 +2,11 @@
 using CQRS.Core.Consumers;
 using CQRS.Core.Events;
 using Microsoft.Extensions.Options;
-using Post.Query_Infrastructure.Converters;
-using Post.Query_Infrastructure.Handlers;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using Post.Query.Infrastructure.Converters;
+using Post.Query.Infrastructure.Handlers;
 using System.Text.Json;
-using System.Threading.Tasks;
 
-namespace Post.Query_Infrastructure.Consumers
+namespace Post.Query.Infrastructure.Consumers
 {
     public class EventConsumer : IEventConsumer
     {
@@ -35,16 +30,16 @@ namespace Post.Query_Infrastructure.Consumers
 
             while (true)
             {
-                var consumerResult = consumer.Consume();
+                var consumeResult = consumer.Consume();
 
-                if (consumerResult?.Message == null) continue;
+                if (consumeResult?.Message == null) continue;
 
                 var options = new JsonSerializerOptions
                 {
                     Converters = { new EventJsonConverter() }
                 };
 
-                var evnt = JsonSerializer.Deserialize<BaseEvent>(consumerResult.Message.Value, options);
+                var evnt = JsonSerializer.Deserialize<BaseEvent>(consumeResult.Message.Value, options);
                 var handlerMethod = eventHandler.GetType().GetMethod("On", new Type[] { evnt.GetType() });
 
                 if (handlerMethod == null)
@@ -53,7 +48,7 @@ namespace Post.Query_Infrastructure.Consumers
                 }
 
                 handlerMethod.Invoke(eventHandler, new object[] { evnt });
-                consumer.Commit(consumerResult);
+                consumer.Commit(consumeResult);
             }
         }
     }

@@ -25,6 +25,7 @@ builder.Services.AddScoped<ICommandHandler, CommandHandler>();
 
 // register command handler methods
 var commandHandler = builder.Services.BuildServiceProvider().GetRequiredService<ICommandHandler>();
+
 var dispatcher = new CommandDipatcher();
 
 dispatcher.RegisterHandler<NewPostCommand>(commandHandler.HandleAsync);
